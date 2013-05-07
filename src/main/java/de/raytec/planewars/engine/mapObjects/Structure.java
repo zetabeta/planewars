@@ -9,5 +9,5 @@ package de.raytec.planewars.engine.mapObjects;
  * @author raymoon
  */
 public class Structure extends Asset {
-    private float stabilizationFieldRadius;
+   
 }

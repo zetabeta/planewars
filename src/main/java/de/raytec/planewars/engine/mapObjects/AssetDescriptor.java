@@ -14,14 +14,14 @@ import java.util.Map;
  */
 public abstract class AssetDescriptor {
 
-    public static class RessourceDescription {
+    public static class AssetRessourceDescriptor {
+        private AssetResourceType type;
         private float maxValue;
         private float selfGenerationPerSecond;
     }
 
-   
     private String typeName;
-    private Map<AssetResourceType, RessourceDescription> assetResources;
+    private List<AssetRessourceDescriptor> assetResources;
     private Weaponry weapons;
     private float generatedControlRange;
     private float travelDistancePerSecond;

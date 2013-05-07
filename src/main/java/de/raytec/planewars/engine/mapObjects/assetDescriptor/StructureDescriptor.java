@@ -12,5 +12,5 @@ import de.raytec.planewars.engine.mapObjects.AssetDescriptor;
  */
 public class StructureDescriptor extends AssetDescriptor {
 
-   
+    private float stabilizationFieldRadius;
 }
