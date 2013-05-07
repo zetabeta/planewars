@@ -32,6 +32,9 @@ class MyGame implements ApplicationListener {
         Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 
         ShapeRenderer renderer = new ShapeRenderer();
+        Gdx.gl10.glHint(GL10.GL_LINE_SMOOTH_HINT, GL10.GL_NICEST);
+        Gdx.gl10.glEnable(GL10.GL_BLEND);
+        Gdx.gl10.glBlendFunc(GL10.GL_SRC_ALPHA, GL10.GL_ONE_MINUS_SRC_ALPHA);
         renderer.begin(ShapeType.Circle);
         renderer.setColor(1, 1, 0, 1);
         renderer.circle(50.0f, 60.0f, 30.0f, 20);

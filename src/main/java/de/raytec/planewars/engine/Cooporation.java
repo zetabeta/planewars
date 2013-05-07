@@ -11,8 +11,10 @@ import java.util.List;
  *
  * @author raymoon
  */
-public class PlayerGroup {
+public class Cooporation {
+    public enum CoorporationResourceType {
+        POWER, SIMPLE_MATTER, COMPLEX_MATTER
+    }
+    
     private final List<Player> players = new LinkedList<Player>();
-
-    private final List<Unit> controlledUnits = new LinkedList<Unit>();
 }

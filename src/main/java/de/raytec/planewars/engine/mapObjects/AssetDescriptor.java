@@ -2,29 +2,27 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package de.raytec.planewars.engine;
+package de.raytec.planewars.engine.mapObjects;
 
+import de.raytec.planewars.engine.mapObjects.assetDescriptor.StructureDescriptor;
+import java.util.List;
 import java.util.Map;
 
 /**
  *
  * @author raymoon
  */
-public class UnitType {
-    
+public abstract class AssetDescriptor {
+
     public static class RessourceDescription {
         private float maxValue;
         private float selfGenerationPerSecond;
-        private float remoteGenerationPerSecond;
     }
-    
-    private String typeName;
-    private Map<UnitRessourse, RessourceDescription> ressources;
 
-    private float attacksPerSecond;
-    private float damagePerAttack;
-    private float energyCostPerAttack;
+   
+    private String typeName;
+    private Map<AssetResourceType, RessourceDescription> assetResources;
+    private Weaponry weapons;
     private float generatedControlRange;
-    
     private float travelDistancePerSecond;
 }
