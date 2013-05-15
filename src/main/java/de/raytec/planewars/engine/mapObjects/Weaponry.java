@@ -11,4 +11,5 @@ package de.raytec.planewars.engine.mapObjects;
 public class Weaponry {
     private float damagePerSecond;
     private float energyConsumptionPerSecond;
+    private float attackDistance;
 }
