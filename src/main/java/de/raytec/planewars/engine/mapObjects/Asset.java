@@ -17,6 +17,6 @@ public abstract class Asset {
     private AssetDescriptor assetType;
     private Cooporation owner;
     private Coordinate location;
-    private Map<AssetResourceType, Float> ressourceLevel;
+    private Map<AssetResourceType, Float> ressourceLevel;<<<<<
     private AttackOrder attackOrder;
 }
